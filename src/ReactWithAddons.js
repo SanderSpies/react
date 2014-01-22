@@ -28,13 +28,15 @@
 var LinkedStateMixin = require('LinkedStateMixin');
 var React = require('React');
 var ReactTransitionGroup = require('ReactTransitionGroup');
+var ReactTestUtils = require('ReactTestUtils');
 
 var cx = require('cx');
 
 React.addons = {
   classSet: cx,
   LinkedStateMixin: LinkedStateMixin,
-  TransitionGroup: ReactTransitionGroup
+  TransitionGroup: ReactTransitionGroup,
+  TestUtils: ReactTestUtils
 };
 
 module.exports = React;
